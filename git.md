@@ -1,3 +1,7 @@
+### Set origin and make initial push ###
+    git remote add origin <url>
+    git push -u origin master
+
 ### View all branches ###
     git branch -a
 
