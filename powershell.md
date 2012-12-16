@@ -1,6 +1,4 @@
 # Redirection
-
-####Redirect output to a file
 ```
     command > filename      # Redirect output to a file   
     command >> filename     # Append output to a file
