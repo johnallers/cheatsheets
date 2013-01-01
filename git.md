@@ -26,3 +26,7 @@
 
 ### SVN Clone ###
     git svn clone -s --prefix=svn/ -r --no-minimize-url HEAD https://repo
+
+### Apply SVN patch (Git Bash) ###
+    cd /path/to/patch
+    patch -p0 < /path/of/patch.patch
