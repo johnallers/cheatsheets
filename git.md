@@ -17,6 +17,9 @@
 ### Stash untracked files ###
     git stash -u
 
+### Show differences between files in different branches ###
+    git difftool somebranch:UNREADME otherbranch:README
+
 ### Aliases ###
     git config --global alias.co checkout
     git config --global alias.st status
