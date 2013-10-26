@@ -28,8 +28,11 @@
     git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
 
 ### SVN Clone ###
-    git svn clone -s --prefix=svn/ -r --no-minimize-url HEAD https://repo
+    git svn clone -s --prefix=svn/ -r HEAD --no-minimize-url https://repo
 
 ### Apply SVN patch (Git Bash) ###
     cd /path/to/patch
     patch -p0 < /path/of/patch.patch
+    
+### Merging a trunk into a branch ###
+    git merge --no-ff svn/trunk
