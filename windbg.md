@@ -3,6 +3,10 @@
 	lm v m mscorwks
 	lm v m clr
 
+**Identify architecture**
+
+	vertarget 
+
 **Automatically load mscordacwks**
 
 	.cordll -ve -u -l
@@ -12,7 +16,7 @@
 
     .cordll -ve -u -lp C:\mylocalsymcache
 
-**Load SOS for .NET 4.0**
+**Load SOS for .NET 4.0 (Must match mscordacwks, but may not be necessary to load.  Psscor loads a subset of SOS)**
 
     .loadby sos clr
 
