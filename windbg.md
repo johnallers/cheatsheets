@@ -1,3 +1,8 @@
+**Identify .NET version**
+
+	lm v m mscorwks
+	lm v m clr
+
 **Automatically load mscordacwks**
 
 	.cordll -ve -u -l
