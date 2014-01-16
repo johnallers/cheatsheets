@@ -34,5 +34,9 @@
     cd /path/to/patch
     patch -p0 < /path/of/patch.patch
     
+### Configure git-svn to populate svn:mergeinfo ###
+
+    git config --global svn.pushmergeinfo true  
+    
 ### Merging a trunk into a branch ###
     git merge --no-ff svn/trunk
