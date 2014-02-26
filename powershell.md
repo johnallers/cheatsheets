@@ -8,3 +8,8 @@
     command 1>&2            # Add results to errors
     command | command       # Pipeline operator
 ```
+
+# Load a .NET assembly
+```
+    [void][System.Reflection.Assembly]::LoadFrom(PathToYourAssembly)
+```
