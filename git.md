@@ -40,3 +40,10 @@
     
 ### Merging a trunk into a branch ###
     git merge --no-ff svn/trunk
+
+### Adding SVN branches to pull (.git/config) ###
+
+    [svn-remote "svn"]
+        url = http://example.com/path/to/project-x
+        fetch = trunk:refs/remotes/git-svn
+        fetch = branches/branch1:refs/remotes/branch1
