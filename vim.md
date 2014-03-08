@@ -1,7 +1,13 @@
 ## Working with multiple Files ##
+
 Open a tab
-  :tabe <filename>
+
+    :tabe <filename>
+    
 Next tab
-  :tabn
+
+    :tabn
+
 Previous tab
-  :tabp
+
+    :tabp
