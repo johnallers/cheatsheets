@@ -18,3 +18,13 @@
         url = http://example.com/path/to/project-x
         fetch = trunk:refs/remotes/git-svn
         fetch = branches/branch1:refs/remotes/branch1
+
+### Import svn ignores ###
+
+    git svn show-ignore >> .git/info/exclude
+
+### Git SVN Fetch Skip revisions ###
+This is useful if need to skip a botched SVN revision. For instance, a deleted then recreate SVN branch might cause git-svn to re-fetch all the revisions again to find a matching parent commit. In this case you can skip the revision where the bad branch was created to avoid re-fetching all commits.
+
+    git svn fetch -r BASE:665
+    git svn fetch -r 667:HEAD
