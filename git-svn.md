@@ -1,7 +1,7 @@
 ### SVN Clone ###
 ~~_Consider setting global core.autocrlf to false to avoid line ending issues._~~
 
-    git svn clone -s --prefix=svn/ -r HEAD --no-minimize-url https://repo
+    git svn clone -s --prefix=svn/ -r{Start revision #}:HEAD --no-minimize-url https://repo
 
 ### Apply SVN patch (Git Bash) ###
     cd /path/to/patch
