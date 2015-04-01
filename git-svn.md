@@ -11,7 +11,7 @@
 
     git config --global svn.pushmergeinfo true  
     
-### Merging a trunk into a branch ###
+### Merging trunk into a branch ###
     git merge --no-ff svn/trunk
 
 ### Adding SVN branches to pull (.git/config) ###
