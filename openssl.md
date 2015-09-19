@@ -71,3 +71,14 @@ Reverse, but only to a single file:
 	openssl cr12pkcs7 -nocrl -out fd.p7b -certfile fd.crt -certfile fd-chain.crt
 	
 	openssl pkcs7 -in fd.p7b -print_certs -out fd.pem
+**List supported ciphers**
+
+	openssl ciphers -v 'ALL:COMPLEMENTOFALL'
+	openssl ciphers -v 'RC4'
+	openssl ciphers -v 'RC4+SHA'
+**Performance**
+
+	openssl speed aes-128-cbc
+Activate hardware acceleration
+
+	openssl speed -evp aes-128-cbc
