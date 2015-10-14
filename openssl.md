@@ -1,3 +1,7 @@
+**Get Certificate for a specific site**
+
+	openssl s_client -connect {HOSTNAME}:{PORT} -showcerts
+
 Extracted from "Bulletproof SSL and TLS" by Ivan Ristic
 
 **Version**
