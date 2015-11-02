@@ -52,6 +52,8 @@ Command
 **Examine certificate**
 
 	openssl x509 -text -in fd.crt -noout
+	openssl x509 -inform der -in mine.cer -noout -text
+	
 **Convert between PEM and DER format**
 
 	openssl x509 -inform PEM -in fd.pem -outform DER -out fd.der
