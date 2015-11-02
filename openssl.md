@@ -17,6 +17,8 @@ Extracted from "Bulletproof SSL and TLS" by Ivan Ristic
 **View key structure**
 
 	openssl rsa -text -in fd.key
+	openssl rsa -inform pvk -text -in mine.pvk
+
 **Export public part of RSA key**
 
 	openssl rsa -in fd.key -pubout - out fd-public.key
