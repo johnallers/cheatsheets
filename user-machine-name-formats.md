@@ -1,6 +1,7 @@
 **Legacy Windows**
 
-    NETBIOS Domain Name \ SAM (Security Account Manager) account name
+    NetBIOS Domain Name \ SAM (Security Account Manager) account name
+    NetBIOS Name: 16-byte address ending with 0x20. Names are 15 characters, padded with spaces; 16th character is 0x20.
     
     Sample: MYDOMAIN\JOHN
 
