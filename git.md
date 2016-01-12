@@ -26,6 +26,7 @@
     git config --global alias.br branch
     git config --global alias.qlog 'log --oneline --graph'
     git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
+    git config --global alias.unstage 'reset HEAD --'
 
 ### Merging a trunk into a branch ###
     git merge --no-ff svn/trunk
