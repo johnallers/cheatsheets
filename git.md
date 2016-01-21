@@ -20,6 +20,13 @@
 ### Show differences between files in different branches ###
     git difftool somebranch:UNREADME otherbranch:README
 
+## Temporarily ignore file ##
+    git update-index --assume-unchanged path/to/file
+
+keep tracking again:
+
+    git update-index --no-assume-unchanged path/to/file
+
 ### Aliases ###
     git config --global alias.co checkout
     git config --global alias.st status
