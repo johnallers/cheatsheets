@@ -1,1 +1,1 @@
-    curl -H "Host: badhost.net" https://target.com/ss_qa/Login.aspx -k | fgrep badhost
+    curl -H "Host: badhost.net" https://target.com/Login.aspx -k | fgrep badhost
