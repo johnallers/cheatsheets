@@ -4,6 +4,10 @@
 
 Extracted from "Bulletproof SSL and TLS" by Ivan Ristic
 
+**Check TLS support**
+
+	 openssl s_client -connect google.com:443 -{tls1,tls1_1,tls1_2}
+
 **Version**
 
 	openssl version
