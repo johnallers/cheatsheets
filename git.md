@@ -41,3 +41,7 @@ keep tracking again:
 ### Show all branches with time of last commit ###
     # Credit http://stackoverflow.com/a/2514279
     for branch in `git branch | grep -v HEAD`;do echo -e `git show --format="%ci %cr" $branch | head -n 1` \\t$branch; done | sort -r
+
+### Show current branch name ##
+
+    git rev-parse --abbrev-ref HEAD
