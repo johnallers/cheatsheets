@@ -20,6 +20,9 @@
 ### Show differences between files in different branches ###
     git difftool somebranch:UNREADME otherbranch:README
 
+### Show folder differences between different refs (Useful w/ Beyond Compare)
+    git difftool ref1..ref2 --dir-diff
+
 ## Temporarily ignore file ##
     git update-index --assume-unchanged path/to/file
 
