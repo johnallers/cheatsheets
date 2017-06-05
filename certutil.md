@@ -9,3 +9,9 @@ View certificates in the user's Personal store:
 Import certificate and private key using a specific CSP:
 
     certutil -CSP "Microsoft Software Key Storage Provider" -ImportPFX idp.pfx
+
+List All CSPs
+
+	certutil -csplist
+
+More: http://planetmediocrity.com/2013/10/certutil-exe-undocumented-switches/
