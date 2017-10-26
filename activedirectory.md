@@ -1,3 +1,8 @@
+Fix domain trust relationship
+-----------------------------
+
+    Reset-ComputerMachinePassword [-Credential <PSCredential>] [-Server <String>]
+
 Find a domain controller
 ------------------------
 
