@@ -1,3 +1,9 @@
+## Search and Replace ##
+
+Whole file
+
+    :%s/foo/bar/g
+
 ## Working with multiple Files ##
 
 Open a tab
