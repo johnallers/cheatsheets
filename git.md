@@ -48,3 +48,8 @@ keep tracking again:
 ### Show current branch name ##
 
     git rev-parse --abbrev-ref HEAD
+    
+### Rewrite commits, excluding specific folders ###
+
+    git filter-branch --index-filter "git rm -r -f --cached --ignore-unmatch '$(ls -xd src/!(ExcludeThisSubfolder))'" --prune-empty -- --all
+
