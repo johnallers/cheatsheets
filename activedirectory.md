@@ -4,8 +4,11 @@ Download RSAT (Remote Server Administration Tools): https://social.technet.micro
 
 Fix domain trust relationship
 -----------------------------
+1. Ensure that the computer object exists on the domain controller. If it doesn't, create it.
 
-    Reset-ComputerMachinePassword [-Credential <PSCredential>] [-Server <String>]
+2. On the client machine, open PowerShell as administrator and run:
+
+       Reset-ComputerMachinePassword [-Credential <Domain Account>] [-Server <DCName>]
 
 Find a domain controller
 ------------------------
