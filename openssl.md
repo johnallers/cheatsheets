@@ -83,6 +83,17 @@ Reverse, but only to a single file:
 	openssl cr12pkcs7 -nocrl -out fd.p7b -certfile fd.crt -certfile fd-chain.crt
 	
 	openssl pkcs7 -in fd.p7b -print_certs -out fd.pem
+	
+**Convert PKCS#12 (.PFX) to PEM (.CRT) and decrypted key**
+
+	openssl pkcs12 -in [yourfile.pfx] -nocerts -out [keyfile-encrypted.key]
+
+	openssl pkcs12 -in [yourfile.pfx] -clcerts -nokeys -out [certificate.crt]
+	
+	openssl rsa -in [keyfile-encrypted.key] -out [keyfile-decrypted.key]
+
+Ref: https://www.techrunnr.com/how-to-convert-pfx-to-separate-key-crt-file/
+	
 **List supported ciphers**
 
 	openssl ciphers -v 'ALL:COMPLEMENTOFALL'
