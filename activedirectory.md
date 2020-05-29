@@ -9,6 +9,9 @@ Fix domain trust relationship
 2. On the client machine, open PowerShell as administrator and run:
 
        Reset-ComputerMachinePassword [-Credential <Domain Account>] [-Server <DCName>]
+       
+       Example:
+       Reset-ComputerMachinePassword -Credential FooBarCorp\Admin -Server dc.foobarcorp.com
 
 Find a domain controller
 ------------------------
