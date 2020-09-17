@@ -26,9 +26,15 @@ Extracted from "Bulletproof SSL and TLS" by Ivan Ristic
 **Export public part of RSA key**
 
 	openssl rsa -in fd.key -pubout - out fd-public.key
+
+**Extract key from PEM**
+
+	openssl pkey -in foo.pem -out foo.key
+
 **Generate DSA parameters, then DSA key**
 
 	openssl dsaparam -genkey 2048 | openssl -out dsa.key -a es128
+
 **Generate ECDSA key**
 
 	openssl ecparam -genkey -name secp256r1 | openssl ec -out ec.key -aes128
