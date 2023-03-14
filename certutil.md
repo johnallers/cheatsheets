@@ -15,3 +15,7 @@ List All CSPs
 	certutil -csplist
 
 More: http://planetmediocrity.com/2013/10/certutil-exe-undocumented-switches/
+
+CSP Test (List supported algorithms)
+
+	 certutil -csptest -csp "Microsoft Software Key Storage Provider"
